@@ -441,7 +441,38 @@ tbody tr td {
 
 /* ENDS HERE */
 
+@media(max-width:360px) {
+	#menu-btn {
+		padding: 7px 15px;
+		font-size: 20px;
+	}
 
+	#interface .navigation .profile i {
+		font-size: 20px;
+	}
+
+	#interface .navigation .profile img {
+		width: 40px;
+		height: 40px;
+	}
+
+	#interface .navigation .search i {
+		font-size: 20px;
+		display: none;
+	}
+
+	#interface .navigation {
+		padding: 15px;
+	}
+
+	#interface .navigation .search input {
+		width: 100px;
+		display: none;
+	}
+
+}
+
+/* ENDS HERE */
 
 /* ADD MOVIE STYLING */
 #main-content {
