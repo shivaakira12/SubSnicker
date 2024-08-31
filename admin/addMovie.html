@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title icon-->
+    <link rel="shortcut icon" href="admin.png" type="image/x-icon" />
+    <title>Admin Panel</title>
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Font Awesome CDN Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="main-content">
+      <div class="form-container">
+        <h2>Add Movie</h2>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="movie-name">Movie Name</label>
+              <input type="text" id="movie-name" name="movie-name" required />
+            </div>
+            <div class="form-group">
+              <label for="movie-genre">Movie Genre</label>
+              <input type="text" id="movie-genre" name="movie-genre" required />
+            </div>
+            <div class="form-group">
+              <label for="movie-director">Movie Director</label>
+              <input
+                type="text"
+                id="movie-director"
+                name="movie-director"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="movie-synopsis">Movie Synopsis</label>
+              <textarea
+                id="movie-synopsis"
+                name="movie-synopsis"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="movie-category">Movie Category</label>
+              <input
+                type="text"
+                id="movie-category"
+                name="movie-category"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="movie-language">Movie Language</label>
+              <input
+                type="text"
+                id="movie-language"
+                name="movie-language"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="movie-release-date">Movie Release Date</label>
+              <input
+                type="date"
+                id="movie-release-date"
+                name="movie-release-date"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="movie-cast">Movie Cast</label>
+              <input type="text" id="movie-cast" name="movie-cast" required />
+            </div>
+            <div class="form-group">
+              <label for="movie-subtitle-file">Movie Subtitle File</label>
+              <input
+                type="file"
+                id="movie-subtitle-file"
+                name="movie-subtitle-file"
+                accept=".srt,.sub,.ass"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="movie-image">Movie Image</label>
+              <input
+                type="file"
+                id="movie-image"
+                name="movie-image"
+                accept="image/*"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit">Add Movie</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
